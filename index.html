@@ -6,22 +6,60 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <title>Ordinul Templierilor</title>
     <script src="https://kit.fontawesome.com/577e0abbbf.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="http://example.com/favicon.png">
 </head>
+
 <body class="body">
+
 <section class="secnav">
-<nav class="navbar">
+    <nav class="navbar">
     <a class="navlink"><img class="logo" src="images/logo.svg.png" alt="logo"></a>
     <a class="navlink" href="#">Istorie</a>
     <a class="navlink" href="#">Organizare</a>
     <a class="navlink" href="#">Moștenire</a>
     <a class="navlink"><img class="logo" src="images/logo.svg.png" alt="logo"></a>
-</nav>
-    <div class="divsearch">
-        <i class="fas fa-search"></i>
-        <label class="label">
-            <input class="input" type="text" placeholder="Caută...">
-        </label>
+    </nav>
+
+    <div class="div">
+        <h1 class="title">Pauperes Commilitones Christi<br>Templique Solomonici</h1>
     </div>
+
+    <form class="divsearch" id="id2" role="search">
+        <button class="btn"><i class="fas fa-search"></i></button>
+        <label class="label">
+            <input id="id1" name="q" class="input" type="search" placeholder="Caută...">
+        </label>
+    </form>
+
+    <script>
+        const f = document.getElementById('id2');
+        const q = document.getElementById('id1');
+        const google = 'https://www.google.com/search?q=site%3A+';
+        const site = 'index.html';
+
+        function submitted(event) {
+            event.preventDefault();
+            const url = google + site + '+' + q.value;
+            const win = window.open(url, '_blank');
+            win.focus();
+        }
+
+        f.addEventListener('submit', submitted);
+    </script>
+</section>
+
+<section class="sec">
+    <div class="row">
+        <div class="column">
+            <img class="img" alt="steag" src="images/steag.gif">
+        </div>
+        <div class="column">
+        </div>
+        <div class="column">
+        </div>
+    </div>
+    <div class="row"></div>
+    <div class="row"></div>
 </section>
 </body>
 </html>
