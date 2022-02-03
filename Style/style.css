@@ -1,11 +1,14 @@
 :root
 {
- --red: #c8392f;
+    --red: #c8392f;
+    --shadow:var(--red) 0 3px 6px, var(--red) 0 3px 6px;
+    --shadowinset:var(--red) 0 3px 6px inset, var(--red) 0 3px 6px inset;
+
 }
 
 .body
 {
-    padding: 20px;
+    padding: 5px 20px;
     background-color: black;
     font-family: "Ubuntu", sans-serif;
 }
@@ -32,15 +35,25 @@
     padding: 5px;
     width: 30%;
     max-height: 50px;
+    box-shadow: var(--shadow);
 }
 
 .title
 {
     font-size: 16px;
     font-style: italic;
-    color: var(--red);
+    color: black;
     text-align: center;
     line-height: 1.2em;
+}
+
+.steag
+{
+    box-shadow: var(--shadowinset);
+    padding: 10px 20px 0 20px;
+    border-radius: 20px;
+    margin: 0 20px 10px 20px;
+    background-color: black;
 }
 
 .sec
@@ -55,21 +68,21 @@
     align-items:center;
     background-color: white;
     border-radius: 20px;
+    box-shadow: var(--shadow);
+    min-height: 50vh;
+    padding: 10px 0;
 }
 
 .row
 {
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    flex-direction: row;
 }
 
 .column
 {
-    min-width: 33.3%;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
 }
@@ -85,7 +98,8 @@
     padding: 5px;
     width: 35%;
     max-height: 50px;
-    margin: 15px 10px;
+    margin: 0 10px 0 0;
+    box-shadow: var(--shadow);
 }
 
 .navlink
@@ -127,11 +141,12 @@
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    width: 30%;
-    margin: 15px 10px;
+    width: 35%;
+    margin: 10px 0 10px 10px;
     min-height: 50px;
     max-height: 50px;
     align-items: center;
+    box-shadow: var(--shadow);
 }
 
 .divsearch i
@@ -186,16 +201,51 @@
 
 .img
 {
-    max-width: 200px;
+    max-width: 250px;
     margin: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
     border-radius: 5px;
+    box-shadow: var(--shadow);
 }
 
-.img:hover
+.description
 {
-    box-shadow: rgba(0, 0, 0, 0) 0 0 0;
-    border-radius: 5px;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--red);
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.tab1
+{
+    border: 1px solid var(--red);
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.th1
+{
+    font-size: 16px;
+    color: var(--red);
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid var(--red);
+    border-bottom-left-radius: 10px;
+}
+
+.td1
+{
+    border-left: 1px solid var(--red);
+    border-bottom: 1px solid var(--red);
+    font-size: 14px;
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+}
+
+.tab1:hover
+{
+    box-shadow: var(--shadow);
 }
 
 @media screen and (max-width: 700px) {
@@ -225,15 +275,37 @@
     .navbar
     {
         width: 100%;
+        margin: 15px 0 15px 0;
+        max-width: 450px;
     }
 
     .divsearch
     {
         width: 100%;
+        margin: 15px 0 15px 0;
+        max-width: 450px;
     }
 
     .div
     {
         width: 100%;
+
+    }
+
+    .sec
+    {
+        width: 90%;
+        max-width: 450px;
+        flex-direction: row;
+    }
+
+    .row
+    {
+        flex-direction: column;
+    }
+
+    .img
+    {
+        max-width: 200px;
     }
 }
