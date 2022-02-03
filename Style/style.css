@@ -1,0 +1,61 @@
+:root
+{
+ --red: #c8392f;
+}
+
+.body
+{
+    padding: 20px;
+    background-color: black;
+}
+
+.sec
+{
+    max-width: 1440px;
+    min-width: 320px;
+    width: 90%;
+    margin:auto;
+}
+
+.navbar
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.navlink
+{
+    margin:5px;
+    color: var(--red);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navlinkimg
+{
+    margin:5px;
+}
+
+.navlink:hover
+{
+    color: black;
+}
+
+.logo
+{
+    max-height: 30px;
+    margin-right: 20px;
+}
+
+.navlinkimg:hover
+{
+    border-radius: 50px;
+    border: 1px;
+    border-color: var(--red);
+}
+
