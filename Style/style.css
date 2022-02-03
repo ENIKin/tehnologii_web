@@ -7,6 +7,19 @@
 {
     padding: 20px;
     background-color: black;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.secnav
+{
+    max-width: 1440px;
+    min-width: 320px;
+    width: 90%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
 }
 
 .sec
@@ -26,6 +39,9 @@
     background-color: white;
     border-radius: 20px;
     padding: 5px;
+    width: 70%;
+    min-height: 50px;
+    max-height: 50px;
 }
 
 .navlink
@@ -36,12 +52,13 @@
     text-decoration: none;
 }
 
-.navlinkimg
-{
-    margin:5px;
-}
 
 .navlink:hover
+{
+    color: black;
+}
+
+.navlink:active
 {
     color: black;
 }
@@ -49,13 +66,98 @@
 .logo
 {
     max-height: 30px;
-    margin-right: 20px;
+    margin: 5px 20px;
+    position: relative;
 }
 
-.navlinkimg:hover
+.logo:hover
 {
-    border-radius: 50px;
-    border: 1px;
-    border-color: var(--red);
+    max-height: 25px;
+    margin: 8px 20px;
 }
 
+.divsearch
+{
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    width: 30%;
+    margin: 15px 10px;
+    min-height: 50px;
+    max-height: 50px;
+    align-items: center;
+}
+
+.divsearch i
+{
+    position: absolute;
+    margin-left: 30px;
+    color:var(--red);
+}
+
+.input{
+    width: 100%;
+    padding: 12px 40px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border-color: var(--red);
+    border-style: solid;
+    font-size: 16px;
+    font-family: inherit;
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+.input:focus
+{
+    border-color: black;
+    outline: 1px solid black;
+}
+
+::-webkit-input-placeholder {
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+.label
+{
+    width: 95%;
+}
+
+@media screen and (max-width: 700px) {
+    .secnav
+    {
+        max-width: 1440px;
+        min-width: 320px;
+        width: 90%;
+        margin:auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .body
+    {
+        padding: 15px;
+    }
+
+    .logo
+    {
+        max-height: 30px;
+        margin: 5px 5px;
+    }
+
+    .navbar
+    {
+        width: 100%;
+    }
+
+    .divsearch
+    {
+        width: 100%;
+    }
+}
