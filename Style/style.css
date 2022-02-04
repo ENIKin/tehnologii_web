@@ -20,6 +20,7 @@
     padding: 5px 20px;
     background-color: black;
     font-family: "Ubuntu", sans-serif;
+    max-height: 100vh;
 }
 
 .secnav
@@ -32,6 +33,22 @@
     flex-direction: row;
     justify-content: center;
     align-items:center;
+}
+
+.navbar
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    width: 35%;
+    min-width: 35%;
+    max-height: 50px;
+    margin: 0 10px 0 0;
+    box-shadow: var(--shadow);
 }
 
 .div
@@ -115,22 +132,6 @@
     align-items:center;
 }
 
-.navbar
-{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    width: 35%;
-    min-width: 35%;
-    max-height: 50px;
-    margin: 0 10px 0 0;
-    box-shadow: var(--shadow);
-}
-
 .navlink
 {
     margin:5px;
@@ -159,8 +160,8 @@
 
 .logo:hover
 {
-    max-height: 25px;
-    margin: 8px 20px;
+    transition-duration: 1s;
+    transform: rotate(180deg);
 }
 
 .divsearch
