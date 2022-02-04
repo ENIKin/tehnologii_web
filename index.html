@@ -14,9 +14,9 @@
 <section class="secnav">
     <nav class="navbar">
     <a class="navlink" href="index.html"><img class="logo" src="images/logo.svg.png" alt="logo"></a>
-    <a class="navlink" href="#">Istorie</a>
-    <a class="navlink" href="#">Organizare</a>
-    <a class="navlink" href="#">Moștenire</a>
+    <a class="navlink" href="Istorie.html">Istorie</a>
+    <a class="navlink" href="Organizare.html">Organizare</a>
+    <a class="navlink" href="Moștenire.html">Moștenire</a>
     <a class="navlink" href="index.html"><img class="logo" src="images/logo.svg.png" alt="logo"></a>
     </nav>
 
@@ -31,21 +31,8 @@
         </label>
     </form>
 
-    <script>
-        const f = document.getElementById('id2');
-        const q = document.getElementById('id1');
-        const google = 'https://www.google.com/search?q=site%3A+';
-        const site = 'https://ro.wikipedia.org/';
+<script src="js/searchbar.js"></script>
 
-        function submitted(event) {
-            event.preventDefault();
-            const url = google + site + '+' + q.value;
-            const win = window.open(url, '_blank');
-            win.focus();
-        }
-
-        f.addEventListener('submit', submitted);
-    </script>
 </section>
 
 <section class="sec">
