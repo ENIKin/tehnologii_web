@@ -236,9 +236,13 @@
     max-width: 250px;
     margin: 10px;
     border-radius: 5px;
-    box-shadow: var(--shadow);
+    border: 1px solid var(--red);
 }
 
+.img:hover
+{
+    box-shadow: var(--shadow);
+}
 .overlay
 {
     position: absolute;
@@ -291,16 +295,6 @@
     font-size: 16px;
 }
 
-@keyframes anim1 {
-    0% {
-        transform: scale(.3);
-
-    }
-    100% {
-        transform: scale(1.2);
-    }
-}
-
 .circle
 {
     box-shadow: var(--shadowinset);
@@ -313,11 +307,21 @@
     animation-name: anim1;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
-    animation-delay: initial;
+    animation-delay: 1500ms;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
     animation-play-state: running;
+}
+
+@keyframes anim1 {
+    0% {
+        transform: scale(.3);
+
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 .tab1
@@ -327,6 +331,7 @@
     margin-bottom: 10px;
     border-radius: 20px;
     width: 95%;
+    transition-duration: .3s;
 }
 
 .th1
