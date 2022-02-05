@@ -1,7 +1,7 @@
 const f = document.getElementById('id2');
 const q = document.getElementById('id1');
 const google = 'https://www.google.com/search?q=site%3A+';
-const site = 'https://ro.wikipedia.org/';
+const site = 'wikipedia.org';
 
 function submitted(event) {
     event.preventDefault();
