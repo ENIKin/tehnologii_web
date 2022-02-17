@@ -125,7 +125,7 @@
 {
     box-shadow: var(--shadow);
     background-color: white;
-    max-width: 66.6%;
+    max-width: 66%;
     border-radius: 20px;
     margin-right: 10px;
     padding: 10px 20px;
@@ -136,7 +136,7 @@
     box-shadow: var(--shadow);
     background-color: white;
     min-width: 33.3%;
-    max-width: 33.3%;
+    max-width: 34%;
     border-radius: 20px;
     padding: 10px 20px;
 }
@@ -179,7 +179,7 @@
     color: black;
 }
 
-.navlink:active
+.navlinkblack
 {
     color: black;
 }
@@ -487,6 +487,7 @@
     .text3
     {
         font-size: 12px;
+        text-align: center;
     }
 
     .navlink
