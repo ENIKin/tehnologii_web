@@ -25,7 +25,7 @@
     padding: 5px 20px;
     background-color: black;
     font-family: "EXO", sans-serif;
-    max-height: 100vh;
+    min-height: 100vh;
 }
 
 .secnav
@@ -78,6 +78,26 @@
     color: black;
     text-align: center;
     line-height: 1.2em;
+}
+
+.title:hover
+{
+    color: transparent;
+}
+
+.title::before
+{
+    content: attr(data-text);
+    position: absolute;
+    color: transparent;
+    width: 16.5%;
+    height: 10%;
+    overflow: hidden;
+}
+
+.title:hover::before
+{
+    color: black;
 }
 
 .steag
@@ -213,9 +233,9 @@
 }
 
 .divsearch i
-{
-    color:var(--red);
-}
+ {
+     color:var(--red);
+ }
 
 .btn
 {
@@ -378,6 +398,7 @@
     text-align: left;
     border-bottom: 1px solid var(--red);
     border-bottom-left-radius: 10px;
+    min-width: 130px;
 }
 
 .td1
@@ -407,7 +428,7 @@
 
     .body
     {
-        padding: 15px;
+        padding: 5px;
     }
 
     .logo
@@ -422,6 +443,16 @@
         margin: 15px 0;
         max-width: 450px;
         max-height: 7vh;
+    }
+
+    .title::before
+    {
+        content: attr(data-text);
+        position: absolute;
+        color: transparent;
+        width: 50%;
+        height: 10%;
+        overflow: hidden;
     }
 
     .divsearch
@@ -512,5 +543,4 @@
         min-height: 5px;
         min-width: 5px;
     }
-
 }
