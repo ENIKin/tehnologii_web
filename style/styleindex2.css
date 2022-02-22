@@ -15,8 +15,8 @@
 }
 
 ::selection {
-    color: var(--black);
-    background: var(--red);
+    background: var(--black);
+    color: var(--red);
 }
 
 *
@@ -44,9 +44,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    min-height: 100vh;
     max-width: 80%;
     padding: 10px 0 0 0;
+    margin: 0;
 }
 
 .row
@@ -170,7 +170,7 @@
     margin-top: 15px;
     width: 15vw;
     max-height: 50px;
-    display: inline;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -181,6 +181,7 @@
 
 .share_bar i
 {
+    text-align: center;
     margin: 3px 10px;
     color: var(--red);
     font-size: 30px;
